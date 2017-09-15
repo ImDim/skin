@@ -1,0 +1,38 @@
+$main_font_family: 'Arial', sans-serif;
+$second_font_family: 'Calibri Regular', sans-serif;
+
+$theme-blue: (
+
+    html_bg_color: #fafafa,
+
+    header_bg_color: #1f2637,
+    header_font_color: #b1bfd0,
+
+    header_search_bg_color: rgba(0, 0, 0, 0.3),
+    header_search_border_color: transparent,
+    header_search_border_bottom_color: rgba(255, 255, 255, 0.1),
+
+    menu_bg_color: #19202e,
+    menu_font_color: #78829d,
+    menu_bg_hover: rgba(255, 255, 255, 0.025),
+    menu_font_color-active: #b1bdd5,
+    menu_border_color-active: #2e3d5b,
+    menu_divide_bg_color: rgba(0, 0, 0, 0.21),
+    menu_divide_border_color: rgba(255, 255, 255, 0.05),
+
+    updates_item_color: #4f5a6f,
+    updates_item_b_color: #677b92,
+
+
+);
+
+$theme: $theme-blue;
+
+
+@mixin flex( $jc, $ai ) {
+
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+
+}

@@ -1,0 +1,159 @@
+article.pm
+
+    header.pm__header.flex-start-center
+
+        .container.flex-between-center
+
+
+            ul.pm__header__menu
+
+                li.menu_item.menu_item-active
+                    i.icon.fa.fa-envelope-o(aria-hidden="true")
+                    | Входящие
+
+                li.menu_item
+                    i.icon.fa.fa-paper-plane(aria-hidden="true")
+                    | Отправленные
+
+
+            .wo-btn.wo-btn_blue
+                i.icon.fa.fa-pencil(aria-hidden="true")
+                | Новое сообщение
+
+
+    .container.pm__wrapper
+
+        .pm_table
+
+            .pm_table__header.flex-start-center
+
+                .pm_select.flex-start-center
+
+                    input.wo-checkbox.wo-checkbox-checked(type="checkbox")
+                    span.counter
+                        |3 выбрано
+                        i.icon.fa.fa-chevron-down(aria-hidden="true")
+
+                .pm_back.hidden
+                    i.icon.fa.fa-chevron-left(aria-hidden="true")
+
+                .pm_author.flex-start-center.hidden
+
+                    .avatar(style="background-image:url(assets/img/avatar.png)")
+                    .author Dmitriy
+                    .date сегодня в 4:20
+
+
+                .dropdown.dropdown_inline.pm_actions.hidden
+
+                    .burger.burger_vertical
+                        .filling
+
+
+                    ul.dropdown_menu
+
+                        li.dropdown_menu__item
+                            i.icon.fa.fa-envelope-o(aria-hidden="true")
+                            | Написать
+                        li.dropdown_menu__item
+                            i.icon.fa.fa-pencil-square-o(aria-hidden="true")
+                            | Редактировать
+                        li.dropdown_menu__item
+                            i.icon.fa.fa-trash-o(aria-hidden="true")
+                            | Удалить
+                        li.dropdown_menu__item
+                            i.icon.fa.fa-bullhorn(aria-hidden="true")
+                            | Пожаловаться
+
+                .title.hidden
+
+                    |Новое сообщение
+
+
+
+            .pm_table__content.pm_list
+
+                .row.pm_list__item
+
+                    .td.author
+                        input.wo-checkbox.wo-checkbox-checked(type="checkbox")
+                        |Dmitriy Rybkin
+
+                    .td.theme Тема сообщения
+
+                    .td.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+
+                    .td.date
+                        |4:20
+
+
+                .row.pm_list__item.pm_list__item-unread
+
+                    .td.author
+                        input.wo-checkbox.wo-checkbox-checked(type="checkbox")
+                        | Dmitriy Rybkin
+
+                    .td.theme Тема сообщения
+
+                    .td.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+
+                    .td.date
+                        | 4:20
+
+
+
+
+
+            .pm_table__content.pm_message.hidden
+
+                .pm_message__title Самая короткая тема
+                .pm_message__text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+
+
+            .pm_table__content.pm_new_message.hidden
+
+                .field
+                    span.label
+                        i.icon.fa.fa-address-book(aria-hidden="true")
+                        |Кому
+                    input.text
+
+                .field
+                    span.label
+                        i.icon.fa.fa-hashtag(aria-hidden="true")
+                        |Тема
+                    input.text
+
+                .new_message_text
+                    textarea#new_message_text
+
+
+            .pm_table__bottom.flex-start-center.hidden
+
+                .wo-btn.wo-btn_sm.wo-btn_blue Отправить сообщение
+                .send_option.flex-start-center
+                    input.wo-checkbox.wo-checkbox-checked(type="checkbox")
+                    |Сохранить сообщение в папке "Отправленные"
+
+            .pm_table__bottom.pagination.pm_pagination
+
+                ul.pagination__list
+
+                    li.item
+                        a.page_number 1
+
+                    li.item
+                        a.page_number 2
+
+                    li.item.item-active
+                        a.page_number 3
+
+                    li.item
+                        a.page_number 4
+
+                    li.item.item_unactive
+                        span.page_number ..
+
+                    li.item
+                        a.page_number 15
+

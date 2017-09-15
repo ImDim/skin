@@ -1,0 +1,79 @@
+article.user_profile
+
+    header.header
+
+        .container.flex-start-center
+
+            .avatar.status_online
+                img(src="assets/img/avatar.png" alt="@Username")
+
+            .user_name Username
+
+            .dropdown.user_actions
+
+                .burger.burger_vertical
+                    .filling
+
+
+                ul.dropdown_menu
+                    li.dropdown_menu__item
+                        i.icon.fa.fa-envelope-o(aria-hidden="true")
+                        |Написать
+                    li.dropdown_menu__item
+                        i.icon.fa.fa-pencil-square-o(aria-hidden="true")
+                        |Редактировать
+                    li.dropdown_menu__item
+                        i.icon.fa.fa-trash-o(aria-hidden="true")
+                        |Удалить
+                    li.dropdown_menu__item
+                        i.icon.fa.fa-bullhorn(aria-hidden="true")
+                        |Пожаловаться
+
+    section.container
+
+        ul.user_stat.flex-between-center
+
+            li.user_stat__item
+                .icon_wrapper
+                    i.icon.fa.fa-newspaper-o(aria-hidden="true")
+                .info
+                    .counter 125
+                    .title записей
+
+            li.user_stat__item.user_stat__blue_item
+                .icon_wrapper
+                    i.icon.fa.fa-comment-o(aria-hidden="true")
+                .info
+                    .counter 825
+                    .title комментариев
+
+            li.user_stat__item.user_stat__green_item
+                .icon_wrapper
+                    i.icon.fa.fa-line-chart(aria-hidden="true")
+                .info
+                    .counter 42
+                    .title рейтинг на сайте
+
+
+
+        .wo-box.user_info
+
+            .wo-box__header
+                i.icon.fa.fa-user-circle(aria-hidden="true")
+                | Информация о пользователе
+
+            .wo-box__content.user_info__content
+
+                ul.user_info__list
+
+                    li.row.item
+                        .td.label Имя
+                        .td.value Username
+
+                    li.row.item
+                        .td.label Место жительства
+                        .td.value Волгоград
+
+                    li.row.item
+                        .td.label Зарегистрирован
+                        .td.value 1 января 1970 4:20

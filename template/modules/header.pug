@@ -1,0 +1,39 @@
+header.site_header.flex-between-center
+
+    .site_header__inner.flex-start-center
+
+        .burger.burger_horizontal.site_header__burger
+            .filling
+
+
+        .site_header__logo Your
+            span logo
+
+    .site_header__inner.flex-start-center
+
+        .site_header__search
+
+            input.search_field(type="text" value="" placeholder="Поиск..")
+
+
+        .site_header__user_nav
+
+            .dropdown.user_dropdown
+
+                i.fa.fa-chevron-down(aria-hidden="true")
+                img.avatar(src="assets/img/avatar.png" alt="@Username")
+
+            ul.dropdown_menu.user_dropdown_menu.hidden
+
+                li.head.flex-start-center
+                    img.avatar(src="assets/img/avatar.png" alt="@Username")
+                    .info
+                        .name Admin
+                        .sub админпанель
+                li.item Новые сообщения
+                li.item Мои закладки
+                li.item Непрочитанные новости
+                li.item
+                    i.fa.fa-sign-out(aria-hidden="true")
+                    | Выйти
+
